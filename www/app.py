@@ -1,4 +1,11 @@
-# !user/bin/env python3# -*- coding: utf-8 -*-'''__doc__'''__author__ = 'list'
+# !user/bin/env python3
+#  -*- coding: utf-8 -*-
+
+__author__ = 'Alex LIU'
+
+'''
+async web application.
+'''
 
 from aiohttp import web
 
