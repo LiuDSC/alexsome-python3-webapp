@@ -38,6 +38,7 @@ def init_jinja2(app, **kw):
             env.filters[name] = f
     app['__templating__'] = env
 
+# URL处理日志工厂
 async def logger_factory(app, handler):
     async def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
@@ -111,13 +112,16 @@ def datetime_filter(t):
 # 有问题
 async def init(loop):
     await orm.create_pool(loop=loop, host='127.0.0.1', port=3306, user='root', password='032512', db='awesome')
-    app = web.Application(loop=loop, middlewares=[
+    ## 在handlers.py完全完成后,在下面middlewares的list中加入auth_factory
+    app = web.Application(middlewares=[
         logger_factory, response_factory
     ])
     init_jinja2(app, filters=dict(datetime=datetime_filter))
     add_routes(app, 'handlers')
     add_static(app)
-    srv = await loop.create_server(app._make_handler(), '127.0.0.1', 9000)
+    app_runner = web.AppRunner(app)
+    await app_runner.setup()
+    srv = await loop.create_server(app_runner.server, '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000...')
     return srv
 
