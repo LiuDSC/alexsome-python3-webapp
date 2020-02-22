@@ -109,7 +109,6 @@ def datetime_filter(t):
     dt = datetime.fromtimestamp(t)
     return u'%s年%s月%s日' % (dt.year, dt.month, dt.day)
 
-# 有问题
 async def init(loop):
     await orm.create_pool(loop=loop, host='127.0.0.1', port=3306, user='root', password='032512', db='awesome')
     ## 在handlers.py完全完成后,在下面middlewares的list中加入auth_factory
