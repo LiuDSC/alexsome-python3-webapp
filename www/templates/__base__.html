@@ -28,7 +28,7 @@
     <!--jinja2 meta块-->
     {% block meta %}<!-- block meta  -->{% endblock %}
     <!--jinja2 title块-->
-    <title>{% block title %} ? {% endblock %}| AwesomeDavidBlog</title>
+    <title>{% block title %} ? {% endblock %}| Alex Liu 放肆空间</title>
     <link rel="stylesheet" href="/static/css/uikit.min.css">
     <link rel="stylesheet" href="/static/css/uikit-rtl.min.css">
     <link rel="stylesheet" href="/static/css/awesome.css" />
@@ -39,6 +39,8 @@
     <script src="/static/js/sticky.min.js"></script>
     <script src="/static/js/vue.min.js"></script>
     <script src="/static/js/awesome.js"></script>
+    <!--增加favicon-->
+    <link rel="shortcut icon" href="/static/favicon.ico" />
     <!--jinja2 beforehead块-->
     {% block beforehead %}<!-- before head  -->{% endblock %}
 </head>
@@ -54,7 +56,7 @@
         <div class="uk-navbar-left uk-margin-medium-top uk-margin-medium-bottom">
             <a class="uk-navbar-item uk-logo uk-margin-left" href="/">
                 <!--此处uk-icon为图标,读者可以选UIkit自带icon,也可以添加自定义icon重新打包uk-icon.js,详见官网Documentation-->
-                <span class="uk-icon uk-margin-small-right" uk-icon="pagekit" ratio="2"></span>
+                <span class="uk-icon uk-margin-small-right" uk-icon="file-edit" ratio="2"></span>
                  Alex LIU
             </a>
             <ul class="uk-navbar-nav">
@@ -133,10 +135,7 @@
     <div class="uk-container uk-container-center uk-text-center">
         <p>
             <a target="_blank" href="https://github.com/LiuDSC" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="github"></a>
-            <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="instagram"></a>
-            <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.2" uk-icon="twitter"></a>
-            <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.2" uk-icon="google-plus"></a>
-            <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="linkedin"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/yuheng-liu-ldsc/" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="linkedin"></a>
         </p>
         <p class="uk-text-meta" style="line-height: 10px; padding: 10px 0; margin: 8px 0;">Powered by <a href="https://github.com/LiuDSC">Alexsome Blog!</a> Copyright &copy; 2020.</p>
         <p class="uk-text-meta" style="line-height: 0px; padding: 0px 0; margin: 0px 0;"><a href="https://github.com/LiuDSC" target="_blank">Alex LIU</a>. All rights reserved.</p>
