@@ -61,7 +61,8 @@ $(function () {
 {% block content %}
     <div class="uk-grid">
     <div class="uk-width-1-1 uk-margin-bottom">
-        <ul class="uk-breadcrumb">
+        <!--uk-breadcrumb有bug，用uk-subnav替换-->
+        <ul class="uk-subnav uk-subnav-line">
             <li><a href="/manage/comments">评论</a></li>
             <li><a href="/manage/blogs">日志</a></li>
             <li><a href="/manage/users">用户</a></li>
@@ -82,6 +83,12 @@ $(function () {
                 <label class="uk-form-label">标题:</label>
                 <div class="uk-form-controls">
                     <input v-model="name" name="name" type="text" placeholder="标题" class="uk-input uk-form-width-large">
+                </div>
+            </div>
+                        <div class="uk-margin-top">
+                <label class="uk-form-label">摘要:</label>
+                <div class="uk-form-controls">
+                    <textarea v-model="summary" rows="4" name="summary" placeholder="摘要" class="uk-textarea" style="resize:none;"></textarea>
                 </div>
             </div>
             <div class="uk-margin-top">
