@@ -100,7 +100,7 @@ $(function() {
             </tbody>
         </table>
         <div class="uk-width-1-1 uk-text-center">
-        <ul class="uk-pagination">
+        <ul class="uk-pagination uk-flex-center uk-margin-medium-top uk-margin-large-bottom">
             <li v-if="! page.has_previous" class="uk-disabled"><span><i uk-icon="chevron-left"></i></span></li>
             <li v-if="page.has_previous"><a v-on="click: previous()" href="#0"><i uk-icon="chevron-left"></i></a></li>
             <li class="uk-active"><span v-text="page.page_index"></span></li>
@@ -110,4 +110,5 @@ $(function() {
         </div>
     </div>
     </div>
+
 {% endblock %}
