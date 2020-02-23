@@ -55,9 +55,10 @@ $(function() {
 
 <!--jinja2 content 块内容替换-->
 {% block content %}
-
+    <div class="uk-grid">
     <div class="uk-width-1-1 uk-margin-bottom">
-        <ul class="uk-breadcrumb">
+         <!--uk-breadcrumb有bug，用uk-subnav替换-->
+        <ul class="uk-subnav uk-subnav-line">
             <li class="uk-active"><span>评论</span></li>
             <li><a href="/manage/blogs">日志</a></li>
             <li><a href="/manage/users">用户</a></li>

@@ -59,7 +59,8 @@ $(function() {
 {% block content %}
     <div class="uk-grid">
     <div class="uk-width-1-1 uk-margin-bottom">
-        <ul class="uk-breadcrumb">
+         <!--uk-breadcrumb有bug，用uk-subnav替换-->
+        <ul class="uk-subnav uk-subnav-line">
             <li><a href="/manage/comments">评论</a></li>
             <li class="uk-active"><span>日志</span></li>
             <li><a href="/manage/users">用户</a></li>

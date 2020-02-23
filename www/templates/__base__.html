@@ -25,18 +25,17 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,initial-scale=0.9,minimum-scale=0.9,maximum-scale=0.9,user-scalable=no">
     <meta name="wap-font-scale" content="no">
-    <!--Favicon 设置-->
-    <link rel="shortcut icon" href="/static/favicon.ico"/>
     <!--jinja2 meta块-->
     {% block meta %}<!-- block meta  -->{% endblock %}
     <!--jinja2 title块-->
-    <title>{% block title %} ? {% endblock %}| Alexsome Blog</title>
+    <title>{% block title %} ? {% endblock %}| AwesomeDavidBlog</title>
     <link rel="stylesheet" href="/static/css/uikit.min.css">
-    <link rel="stylesheet" href="/static/css/awesome.css"/>
+    <link rel="stylesheet" href="/static/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="/static/css/awesome.css" />
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/sha1.min.js"></script>
     <script src="/static/js/uikit.min.js"></script>
-    <script src="/static/js/uikit-icons.min.js"></script>
+    <script src="/static/js/icons.min.js"></script>
     <script src="/static/js/sticky.min.js"></script>
     <script src="/static/js/vue.min.js"></script>
     <script src="/static/js/awesome.js"></script>
@@ -59,7 +58,7 @@
                  Alex LIU
             </a>
             <ul class="uk-navbar-nav">
-                <li><a href="/manage/blogs"> Article | 日志</a></li>
+                <li><a href="/"> Article | 日志</a></li>
                 <li><a href="https://aodabo.tech/tags/tutorial"> Tutorial | 教程</a></li>
                 <li><a href="https://aodabo.tech/tags/landscape"> Landscape | 景观</a></li>
                 <li><a href="https://aodabo.tech/tags/coding"> Coding | 编程</a></li>
@@ -72,7 +71,7 @@
                     <a href="#0"> {{ __user__.name }}</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="/manage/"> Manage</a></li>
+                            <li><a href="/manage/">Manage</a></li>
                             <li><a href="/signout"> Logout</a></li>
                         </ul>
                     </div>
@@ -139,8 +138,8 @@
             <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.2" uk-icon="google-plus"></a>
             <a target="_blank" href="#" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="linkedin"></a>
         </p>
-        <p class="uk-text-meta" style="line-height: 10px; padding: 10px 0; margin: 8px 0;">Powered by <a href="https://aodabo.tech">Alexsome Blog!</a> Copyright &copy; 2020.</p>
-        <p class="uk-text-meta" style="line-height: 0px; padding: 0px 0; margin: 0px 0;"><a href="https://aodabo.tech/" target="_blank">Alex LIU</a>. All rights reserved.</p>
+        <p class="uk-text-meta" style="line-height: 10px; padding: 10px 0; margin: 8px 0;">Powered by <a href="https://github.com/LiuDSC">Alexsome Blog!</a> Copyright &copy; 2020.</p>
+        <p class="uk-text-meta" style="line-height: 0px; padding: 0px 0; margin: 0px 0;"><a href="https://github.com/LiuDSC" target="_blank">Alex LIU</a>. All rights reserved.</p>
     </div>
     </div>
 

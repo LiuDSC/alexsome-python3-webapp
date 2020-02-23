@@ -8,7 +8,7 @@ __author__ = 'Alex LIU'
 import re, time, json, logging, hashlib, base64, asyncio
 
 # Markdown2 是处理日志文本的一种格式语法
-from markdown2 import markdown
+import markdown
 from aiohttp import web
 from coroweb import get, post
 
@@ -16,6 +16,7 @@ from coroweb import get, post
 from models import User, Comment, Blog, next_id
 from apis import Page, APIValueError, APIResourceNotFoundError
 from config import configs
+
 COOKIE_NAME = 'awesession'
 _COOKIE_KEY = configs.session.secret
 
