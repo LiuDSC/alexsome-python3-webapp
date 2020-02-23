@@ -58,7 +58,7 @@ $(function() {
     <div class="uk-grid">
     <div class="uk-width-1-1 uk-margin-bottom">
          <!--uk-breadcrumb有bug，用uk-subnav替换-->
-        <ul class="uk-subnav uk-subnav-line">
+        <ul class="uk-subnav">
             <li class="uk-active"><span>评论</span></li>
             <li><a href="/manage/blogs">日志</a></li>
             <li><a href="/manage/users">用户</a></li>
@@ -108,5 +108,6 @@ $(function() {
             <li v-if="page.has_next"><a v-on="click: next()" href="#0"><i uk-icon="chevron-right"></i></a></li>
         </ul>
         </div>
+    </div>
     </div>
 {% endblock %}
