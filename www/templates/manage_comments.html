@@ -56,23 +56,24 @@ $(function() {
 <!--jinja2 content 块内容替换-->
 {% block content %}
     <div class="uk-grid">
-    <div class="uk-width-1-1 uk-margin-bottom">
-         <!--uk-breadcrumb有bug，用uk-subnav替换-->
-        <ul class="uk-subnav">
-            <li class="uk-active"><span>评论</span></li>
-            <li><a href="/manage/blogs">日志</a></li>
-            <li><a href="/manage/users">用户</a></li>
+    <!--侧边栏导航-->
+    <div class="uk-width-1-4 uk-background-muted uk-margin-bottom uk-padding-small">
+        <h4>评论管理页面</h4>
+        <ul class="uk-nav uk-nav-side uk-nav-sub">
+            <li class="uk-disabled"><a class="uk-link-muted" href="">评论</a></li>
+            <li><a class="uk-link-muted" href="/manage/blogs">日志</a></li>
+            <li><a class="uk-link-muted" href="/manage/users">用户</a></li>
         </ul>
     </div>
 
-    <div id="error" class="uk-width-1-1">
+    <div id="error" class="uk-width-3-4">
     </div>
 
-    <div id="loading" class="uk-width-1-1 uk-text-center">
+    <div id="loading" class="uk-width-3-4 uk-text-center">
         <span><i class="uk-icon-spinner uk-icon-medium uk-icon-spin"></i> 正在加载...</span>
     </div>
 
-    <div id="vm" class="uk-width-1-1">
+    <div id="vm" class="uk-width-3-4">
         <table class="uk-table uk-table-justify uk-table-divider">
             <thead>
                 <tr>
