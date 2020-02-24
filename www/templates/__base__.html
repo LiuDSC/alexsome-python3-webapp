@@ -49,11 +49,11 @@
 <body>
     <!--"uk-"开头的都是UIkit里的组件，具体请参考UIkit官网的Documents详解-->
     <!--uk-visible@m是大于中等尺寸屏幕时显示的UI-->
-    <div class="uk-margin uk-visible@m" style="background-color:rgba(100,150,185,0);">
+    <div class="uk-margin uk-visible@m"">
     <div class="uk-container uk-container-medium">
     <!--导航栏UI-->
-    <nav class="uk-navbar-container" uk-navbar style="background-color:rgba(255,255,255,0);">
-        <div class="uk-navbar-left uk-margin-medium-top uk-margin-medium-bottom">
+    <nav class="uk-navbar-container uk-margin-medium-bottom" uk-navbar>
+        <div class="uk-navbar-left">
             <a class="uk-navbar-item uk-logo uk-margin-left" href="/">
                 <!--此处uk-icon为图标,读者可以选UIkit自带icon,也可以添加自定义icon重新打包uk-icon.js,详见官网Documentation-->
                 <span class="uk-icon uk-margin-small-right" uk-icon="file-edit" ratio="2"></span>
@@ -66,7 +66,7 @@
                 <li><a href="https://aodabo.tech/tags/coding"> Coding | 编程</a></li>
             </ul>
         </div>
-        <div class="uk-navbar-right uk-margin-medium-top uk-margin-medium-bottom">
+        <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
             {% if __user__ %}
                 <li>
@@ -131,14 +131,16 @@
     </div>
 
     <!-- 页面底部图标栏和网站信息 -->
-    <div class="uk-margin-medium">
+    <div class="uk-margin-large-top" style="background-color:#eee; border-top:1px solid #ccc;">
     <div class="uk-container uk-container-center uk-text-center">
-        <p>
-            <a target="_blank" href="https://github.com/LiuDSC" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="github"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/yuheng-liu-ldsc/" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="linkedin"></a>
-        </p>
-        <p class="uk-text-meta" style="line-height: 10px; padding: 10px 0; margin: 8px 0;">Powered by <a href="https://github.com/LiuDSC">Alexsome Blog!</a> Copyright &copy; 2020.</p>
-        <p class="uk-text-meta" style="line-height: 0px; padding: 0px 0; margin: 0px 0;"><a href="https://github.com/LiuDSC" target="_blank">Alex LIU</a>. All rights reserved.</p>
+        <div class="uk-margin-top uk-margin-bottom">
+            <p>
+                <a target="_blank" href="https://github.com/LiuDSC" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/yuheng-liu-ldsc/" class="uk-icon-button uk-margin-small-right" ratio="1.1" uk-icon="linkedin"></a>
+            </p>
+            <p class="uk-text-meta" style="line-height: 10px; padding: 10px 0; margin: 8px 0;">Powered by <a href="https://github.com/LiuDSC">Alexsome Blog!</a> Copyright &copy; 2020.</p>
+            <p class="uk-text-meta" style="line-height: 0px; padding: 0px 0; margin: 0px 0;"><a href="https://github.com/LiuDSC" target="_blank">Alex LIU</a>. All rights reserved.</p>
+        </div>
     </div>
     </div>
 
